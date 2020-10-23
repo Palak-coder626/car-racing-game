@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+html{
+    font-size:10px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    min-height:100vh;
+    font-family: 'Josefin sans', sans-serif;
+}
+
+.car-game{
+width:100%;
+height:100vh;
+background-image:url('../images/background.png');
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+.hide{
+    display:none;
+}
+
+.car,.enemy{
+    text-align:center;
+    line-height: 8rem;
+    font-weight:700;
+    font-size: 2rem;
+    border-radius: 1rem;
+    position:absolute;
+    bottom:120px;
+    left:3px;
+    width:5rem;
+    height:8rem;
+    background-color: red;
+    background-image:url('../images/car.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    z-index:1;
+}
+
+/* Road  */
+.game-area{
+position:relative;
+height:100vh;
+width:35%;
+margin:0 auto 0;
+background-color: #47484C;
+padding:1rem;
+border-left:0.8rem dashed #f1f9f9;
+border-right:0.8rem dashed #f1f9f9;
+overflow:hidden;
+}
+
+.lines{
+    position:absolute;
+    height: 10rem;
+    width:2.5%;
+    margin-left:calc(1/2 * 95%);
+    background-color:#fff;
+}
+
+.pop-up{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:10;
+    color:#fff;
+    background-color:#ff4b5c;
+    text-align:center;
+    font-size:2rem;
+    line-height:1.5;
+    letter-spacing:0.5rem;
+    padding:3rem;
+    width:50%;
+    border-radius:0.5rem;
+    box-shadow:0 0.2rem 1rem rgba(0,0,0,0.6), inset 0 0.2rem 1rem rgba(255,255,255,0.4);
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+/* Score Card */
+.score-card{
+    position:absolute;
+    width:20%;
+    height:10rem;
+    line-height:10rem;
+    text-align:center;
+    background:#2ec1ac;
+    font-size:2.5rem;
+    margin:2rem;
+    color:#fff;
+    box-shadow:0 0.5rem 1rem rgba(0,0,0,0.2), inset 0 0.2rem 1rem rgba(255,255,255,0.4);
+   
+}
