@@ -119,7 +119,7 @@ if(player.start){
     car.style.top=player.y+"px";
     player.score++;
     const ps=player.score-1;
-    scoreCard.innerText=`Score :${ps}`;
+    scoreCard.innerText=`Score: ${ps}`;
       window.requestAnimationFrame(playGame);
       
     }
